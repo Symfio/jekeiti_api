@@ -10,12 +10,11 @@ class Client(AccountsEndpoint, Constants):
         self.session = requests.Session()
         self.headers = {
             'Cache-Control':'no-cache',
-            'Postman-Token':'e118d134-1e68-416a-8080-06d7812dd019',
             'Accept-Language': 'en,en-US;q=0,5',
             'User-Agent': self.USER_AGENT,
             'Accept-Encoding': 'gzip, deflate',
             'Host': 'jkt48.com',
-            'Referer': 'https://jkt48.com/login',
+            'Referer': 'https://jkt48.com',
             'Connection': 'keep-alive',
             'Accept': '*/*',
         }
@@ -34,8 +33,6 @@ class Client(AccountsEndpoint, Constants):
         
     @property
     def settings(self):
-        """Helper property that extracts the settings that you should cache
-        in addition to username and password."""
         return {
             'cookies': self.cookie
         }
