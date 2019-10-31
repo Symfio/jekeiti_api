@@ -6,12 +6,16 @@ A Python wrapper for the JKT48 Unofficial API Client
 
 ## Features
 - Accounts
-	* Profile info (✓)
-	* History points (✓)
-	* Jadwal oshimen (✓)
-	* Ticket purchase history (todo)
-	* Order history (todo)
-
+	* [x] Profile info
+	* [x] History points
+	* [x] Jadwal oshimen
+	* [ ] Ticket purchase history
+	* [ ] Order history
+	* [ ] Update profile
+- News
+	* [ ] Berita terbaru
+	* [ ] Schedule event
+	
 ## Documentation
 Available soon
 
